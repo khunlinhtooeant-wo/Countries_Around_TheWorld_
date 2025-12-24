@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Feedback</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: serif;
+        background: white;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        background: black;
+      }
+
+      .nav-logo {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .nav-links a:hover,
+      .nav-links .active {
+        text-decoration: underline;
+      }
+
+      .page {
+        min-height: 80vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 60px;
+      }
+
+      .content {
+        width: 45%;
+      }
+
+      .content h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
+      }
+
+      .content p {
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+
+      .feedback-form {
+        max-width: 500px;
+      }
+
+      .feedback-form input,
+      .feedback-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #777;
+        font-size: 16px;
+      }
+
+      .feedback-form textarea {
+        height: 120px;
+        resize: none;
+      }
+
+      .feedback-form button {
+        padding: 10px;
+        width: 200px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-logo">Feedback</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="feedback.html" class="active">Feedback</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+
+    <div class="page">
+      <div class="content">
+        <h1>Feedback</h1>
+        <p>
+          We value your feedback. Please share your thoughts to help us improve
+          our website and services.
+        </p>
+
+        <form action="./Thankyou.html" class="feedback-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Feedback" required></textarea>
+          <button type="submit" onclick="">Send Feedback</button>
+        </form>
+      </div>
+
+      <div class="hero">
+        <img src="google.png" class="img1" alt="" />
+        <img src="pagoda.png" class="img2" alt="" />
+        <img src="ict.jpg" class="img3" alt="" />
+        <img src="animals.jpg" class="img4" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
